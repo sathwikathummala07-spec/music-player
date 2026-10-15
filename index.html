@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="player">
+
+        <h1>🎵 Music Player</h1>
+
+        <!-- Album Art -->
+        <div class="album-art">
+            <img id="album-image" src="images/song1.jpg" alt="Album Art">
+        </div>
+
+        <!-- Song Information -->
+        <h2 id="song-title">Dreams</h2>
+        <p id="artist-name">Sample Artist</p>
+
+        <!-- Progress -->
+        <div class="progress-container">
+
+            <span id="current-time">0:00</span>
+
+            <input
+                type="range"
+                id="progress-bar"
+                value="0"
+                min="0"
+                max="100"
+            >
+
+            <span id="duration">0:00</span>
+
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+
+            <button id="previous">⏮</button>
+
+            <button id="play" class="play-button">
+                ▶
+            </button>
+
+            <button id="next">⏭</button>
+
+        </div>
+
+        <!-- Volume -->
+        <div class="volume">
+
+            <span>🔊</span>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+            >
+
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+            <h3>Playlist</h3>
+
+            <div class="song active" data-index="0">
+
+                <span>🎵</span>
+
+                <div>
+                    <strong>Dreams</strong>
+                    <small>Sample Artist</small>
+                </div>
+
+            </div>
+
+            <div class="song" data-index="1">
+
+                <span>🎵</span>
+
+                <div>
+                    <strong>Midnight</strong>
+                    <small>Sample Artist</small>
+                </div>
+
+            </div>
+
+            <div class="song" data-index="2">
+
+                <span>🎵</span>
+
+                <div>
+                    <strong>Sunset</strong>
+                    <small>Sample Artist</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
